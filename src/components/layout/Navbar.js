@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 
 const Navbar = ({ icon, title }) => {
   return (
-    <AppBar>
+    <AppBar position="absolute">
       <Toolbar>
         <IconButton edge="start" color="inherit" aria-label="menu">
           <i className={icon} />

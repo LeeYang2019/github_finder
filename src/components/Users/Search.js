@@ -10,13 +10,19 @@ class Search extends Component {
     searchUsers: PropTypes.func.isRequired,
     clearUsers: PropTypes.func.isRequired,
     showClear: PropTypes.bool.isRequired,
+    setAlert: PropTypes.func.isRequired,
   };
 
   //calls searchUsers method and resets state
   onSubmit = (e) => {
     e.preventDefault();
-    this.props.searchUsers(this.state.text);
-    this.setState({ text: '' });
+
+    if (this.state.text === '') {
+      this.props.setAlert('Please enter something', 'light');
+    } else {
+      this.props.searchUsers(this.state.text);
+      this.setState({ text: '' });
+    }
   };
 
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
@@ -25,7 +31,7 @@ class Search extends Component {
     const { showClear, clearUsers } = this.props;
 
     return (
-      <div style={{ marginTop: '100px' }}>
+      <div>
         <form onSubmit={this.onSubmit} className="form">
           <input
             type="text"
