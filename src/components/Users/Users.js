@@ -18,7 +18,6 @@ const Users = ({ loading, users }) => {
 };
 
 const userStyle = {
-  marginTop: '64px',
   display: 'grid',
   gridTemplateColumns: 'repeat(3, 1fr)',
   gridGap: '1rem',
