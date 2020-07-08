@@ -18,15 +18,31 @@ const Navbar = ({ icon, title }) => {
     >
       <Toolbar style={{ display: 'flex' }}>
         <IconButton edge="start" color="inherit" aria-label="menu">
-          <i className={icon} />
+          <Link to="/">
+            <i className={icon} style={{ color: '#ffffff' }} />
+          </Link>
         </IconButton>
         <Typography variant="h6">{title}</Typography>
-        <Link to="/">
-          <Button color="inherit">Home</Button>
-        </Link>
-        <Link to="/about">
-          <Button color="inherit">About</Button>
-        </Link>
+        <div
+          style={{
+            position: 'absolute',
+            display: 'flex',
+            justifyContent: 'space-between',
+            right: '25px',
+            width: '160px',
+          }}
+        >
+          <Link to="/">
+            <Button variant="outlined" color="default">
+              Home
+            </Button>
+          </Link>
+          <Link to="/about">
+            <Button variant="outlined" color="default">
+              About
+            </Button>
+          </Link>
+        </div>
       </Toolbar>
     </AppBar>
   );

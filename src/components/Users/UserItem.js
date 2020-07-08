@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../utils/Button';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const UserItem = ({ user: { avatar_url, login, html_url } }) => {
   return (
@@ -12,7 +13,9 @@ const UserItem = ({ user: { avatar_url, login, html_url } }) => {
         style={{ width: '60px' }}
       />
       <h3>{login}</h3>
-      <Button text="More" bck="#3f51b5" color="#ffffff" link={html_url} />
+      <Link to={`/user/${login}`}>
+        <Button text="More" bck="#3f51b5" color="#ffffff" />
+      </Link>
     </div>
   );
 };
