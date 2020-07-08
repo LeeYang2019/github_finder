@@ -5,7 +5,9 @@ const RepoItem = ({ repo: { html_url, name, language, description } }) => {
   return (
     <div className="card">
       <h3>
-        <a href={html_url}>{name}</a>
+        <a href={html_url} target=" ">
+          {name}
+        </a>
       </h3>
       {language && (
         <p>
