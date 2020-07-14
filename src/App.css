@@ -180,6 +180,12 @@ img {
 }
 
 /* Grid */
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -384,6 +390,7 @@ table th {
     display: none;
   }
 
+  .user-grid,
   .grid-2,
   .grid-3,
   .grid-4 {
