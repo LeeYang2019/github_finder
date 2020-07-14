@@ -20,3 +20,4 @@ The following is what I learned from the project:
 Link: https://githubfinder-leeyang2019-2020.netlify.app/
 
 ## Screenshots of Application
+![Screen Shot 2020-07-14 at 11 52 59 AM](https://user-images.githubusercontent.com/46943342/87447444-9c9eb800-c5c8-11ea-9b24-18f141d41fc2.png)
