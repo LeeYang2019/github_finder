@@ -14,7 +14,7 @@ const UserItem = ({ user: { avatar_url, login, html_url } }) => {
       />
       <h3>{login}</h3>
       <Link to={`/user/${login}`}>
-        <Button text="More" bck="#3f51b5" color="#ffffff" />
+        <Button text="More" bck="#3f51b5" color="#ffffff" width="100px" />
       </Link>
     </div>
   );

@@ -10,6 +10,7 @@ const Button = (props) => {
       style={{
         background: props.bck,
         color: props.color,
+        width: props.width,
       }}
     >
       {/* <img src={TicketIcon} className="iconImage" alt="icon_button" /> */}
